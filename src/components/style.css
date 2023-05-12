@@ -1,0 +1,155 @@
+/* Styling for all components  */
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+}
+
+
+.header {
+     /* DISPLAY SETTINGS */ 
+     display: flex;
+     background-color: rgb(102, 106, 215);
+     height: 15vh;
+     width: 100vw;
+ 
+      /* ELEMENT CENTERING */ 
+     align-items: center;
+     justify-content: center;
+ 
+      /* TEXT FORMATTING */ 
+     text-align: center;
+     color: white;
+     font-size:50px;
+     font-weight: bold;
+
+     background: linear-gradient(-45deg, #300ac7, #5f28de, #8a72eb, #46afec);
+     background-size: 400% 400%;
+     animation: gradient 10s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.navbar {
+    margin-top: 20px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    display: flexbox;
+    justify-content: flex-start;
+    align-content: center;
+    background-color:#8a72eb;
+  }
+
+.navbutton {
+    color:rgb(102, 106, 215);
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    padding: 2px;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+
+    /* ELEMENT FORMATTING */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-size: small;
+    cursor: pointer;
+
+}
+
+
+.navbutton:active {
+    background-color: rgb(197, 191, 191);
+}
+
+input {
+    color:rgb(102, 106, 215);
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    padding: 2px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+
+    /* ELEMENT FORMATTING */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-size: small;
+
+}
+
+input:active {
+    background-color: rgb(197, 191, 191);
+}
+
+#document-button {
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+label {
+    color:rgb(102, 106, 215);
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    padding: 2px;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+
+    /* ELEMENT FORMATTING */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-size: small;
+    cursor: pointer;
+}
+
+label:active {
+    background-color: rgb(197, 191, 191);
+}
+
+
+
+.editor {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-radius: 10px;
+    padding: 8px;
+    height: 70vh; 
+    text-align: center;
+    color: white;
+    display: flexbox;
+    justify-content: flex-start;
+    align-content: center;
+    background-color:#aba9b4;
+    overflow-y: scroll;
+}
