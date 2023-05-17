@@ -1,14 +1,22 @@
 //Editor that displays files that are uploaded 
 import './style.css';
+import DocViewer,{DocViewerRenderer} from "react-doc-viewer";
 
 function Editor() {
+
+    const docs = [ 
+        { uri: require(`${__dirname}/leditor-app/public/uploads/divjotcoverletter.docx`)}
+    ];
+
+
     return (
 
     <>
     <div className = "editor">
-        Editor 
+        <DocViewer documents={docs} pluginRenderers={DocViewerRenderer}/>
     </div>
-     </>
+    
+    </>
 
     )
 }
