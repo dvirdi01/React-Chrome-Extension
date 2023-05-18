@@ -5,7 +5,7 @@ import DocViewer,{DocViewerRenderer} from "react-doc-viewer";
 function Editor() {
 
     const docs = [ 
-        { uri: require(`${__dirname}/leditor-app/public/uploads/divjotcoverletter.docx`)}
+        { uri: require(`${__dirname}/leditor-app/public/uploads/letter.docx`)}
     ];
 
 
